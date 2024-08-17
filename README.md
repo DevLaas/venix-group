@@ -5,7 +5,6 @@ O **Venix Group Plugin** é um plugin para Minecraft desenvolvido para facilitar
 ## Funcionalidades
 
 - **Gerenciamento de Grupos**: Adicione e remova grupos de jogadores com comandos simples.
-- **Efeitos VIP**: Oferece efeitos visuais e títulos personalizados para jogadores VIP.
 - **Compatibilidade**: Funciona com a API do LuckPerms para uma integração completa com o sistema de permissões do servidor.
 
 ## Comandos
