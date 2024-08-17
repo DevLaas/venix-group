@@ -1,0 +1,10 @@
+name: venix-group
+author: Laas
+version: 1.0
+description: Plugin para gerênciar cargos.
+depend: [LuckPerms]
+
+main: groups.venixteam.laas.Main
+commands:
+  group:
+    aliases: [grupo, rank, role]

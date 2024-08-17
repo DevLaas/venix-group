@@ -1,0 +1,51 @@
+####################################################
+###                                              ###
+###                                              ###
+###                 VENIX-GROUP                  ###
+###            Desenvolvido por: Laas            ###
+###          Contato (discord): devlaas          ###
+###                 Patch: v1.0                  ###
+###                                              ###
+###  Sistema de group integrado com [LuckPerms]  ###
+###                                              ###
+####################################################
+###                                              ###
+###    Permissão para uso: "venixgroup.group"    ###
+###           Dependências: LuckPerms            ###
+###                                              ###
+###             {PLAYER} = Jogador.              ###
+###              {GROUP} = Grupo.                ###
+###                                              ###
+####################################################
+
+
+# Ao setar o grupo com nome registrado aqui será mostrado um TITLE.
+title:
+  active: true
+
+  # Configuração do title:
+  header: "&6{PLAYER}"
+  footer: "&fTornou-se &e{GROUP}&f."
+
+  # Tempo em ticks (20 ticks = 1 segundo)
+  fadein: 20 # Tempo para surgir.
+  showtime: 60 # Tempo de duração aparente.
+  fadeout: 20 # Tempo para esmaecer.
+
+
+# Insira o nome dos vips registrados em seu LuckPerms.
+vips: 
+  - vip
+
+# Customize as mensagens da forma que você quiser.
+messages:
+  # Mensagens de erro
+  permission: "&c&lERRO: &cVocê não possui permissão para executar esse comando."
+  player-error: "&c&lERRO: &cO jogador especificado não foi encontrado em nossa base de dados."
+  playerinfo-error: "&c&lERRO: &cOcorreu um erro ao tentar acessar os dados do jogador."
+  playergroup-error: "&c&lERRO: &cVocê não pode alterar seu próprio grupo."
+  playergroup-has: "&c&lERRO: &cO jogador já possui o grupo &e{GROUP}&c."
+
+  # Mensagens de exito
+  playergroup-set: "&6&lGROUP: &fO grupo &e{PLAYER} &ffoi &b&lADICIONADO &fa conta do jogador &a{GROUP}&f."
+  playergroup-remove: "&6&lGROUP: &fO grupo &e{PLAYER} &ffoi &c&lREMOVIDO &fda conta do jogador &a{GROUP}&f."
