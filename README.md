@@ -22,9 +22,7 @@ O **Venix Group Plugin** é um plugin para Minecraft desenvolvido para facilitar
 
 ## Configuração
 
-1. **Configuração de Grupos**: Adicione os grupos que deseja usar no plugin diretamente no arquivo `config.yml` do plugin.
-
-2. **Configuração de VIPs**: Configure quais grupos são considerados VIPs e ajuste os títulos e arquivo de configuração.
+1. **Configuração de VIPs**: Configure quais grupos são considerados VIPs e ajuste os títulos e arquivo de configuração.
 
 ## Dependências
 
