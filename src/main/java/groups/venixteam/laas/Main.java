@@ -1,10 +1,7 @@
 package groups.venixteam.laas;
 
 import groups.venixteam.laas.cmd.GroupCommand;
-import net.luckperms.api.LuckPerms;
-import net.luckperms.api.LuckPermsProvider;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
