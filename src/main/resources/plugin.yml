@@ -8,3 +8,4 @@ main: groups.venixteam.laas.Main
 commands:
   group:
     aliases: [grupo, rank, role]
+  tag:
