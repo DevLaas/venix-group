@@ -15,9 +15,19 @@
 ###                                              ###
 ###             {PLAYER} = Jogador.              ###
 ###              {GROUP} = Grupo.                ###
+###                {TAG} = Tag.                  ###
+###            {MSG} = Chat Message.             ###
 ###                                              ###
 ####################################################
 
+database:
+  # Database do tipo MYSQL
+  # - host, porta, nome da database, usuário, senha.
+  host: "localhost"
+  port: 3306
+  db: "database"
+  user: "root"
+  pass: ""
 
 # Ao setar o grupo com nome registrado aqui será mostrado um TITLE.
 title:
@@ -32,10 +42,18 @@ title:
   showtime: 60 # Tempo de duração aparente.
   fadeout: 20 # Tempo para esmaecer.
 
-
 # Insira o nome dos vips registrados em seu LuckPerms.
 vips: 
   - vip
+
+tag:
+  # Configuração de chat
+  enable-chat-format: true
+  chat-format: "{TAG}{PLAYER}&7: &f{MSG}"
+
+  # Ao entrar no lobby o sistema irá mandar uma mensagem de entrada referente ao rank do jogador e o mesmo.
+  enable-join-lobby: true
+  lobbymessage-format: "{TAG}{PLAYER} &6entrou no lobby!"
 
 # Customize as mensagens da forma que você quiser.
 messages:
@@ -49,3 +67,47 @@ messages:
   # Mensagens de exito
   playergroup-set: "&6&lGROUP: &fO grupo &e{PLAYER} &ffoi &b&lADICIONADO &fa conta do jogador &a{GROUP}&f."
   playergroup-remove: "&6&lGROUP: &fO grupo &e{PLAYER} &ffoi &c&lREMOVIDO &fda conta do jogador &a{GROUP}&f."
+
+  tag-acess: "&c&lTAG: &cVocê não tem nenhuma tag disponível."
+  tag-available: "&c&lTAG: &cAqui estão suas tags disponíveis para uso: \n \n"
+  tag-error: "&c&lTAG: &cA tag mencionada é inválida."
+  tag-permission: "&c&lTAG: &cVocê não tem permissão para usar essa tag."
+
+  tag-set: "&a&lTAG: §fVocê agora está usando a tag {TAG}§f."
+
+tags: # As tags abaixo representam os grupos disponíveis no seu LuckPerms, então atenção!
+  dono:
+    name: "&4CEO"
+    prefix: "&4&lCEO &4"
+    perm: "tag.dono"
+    priority: 1
+  admin:
+    name: "&4Admin"
+    prefix: "&4&lADMIN &4"
+    perm: "tag.admin"
+    priority: 2
+  mod+:
+    name: "&5Mod+"
+    prefix: "&5&lMOD+ &5"
+    perm: "tag.modplus"
+    priority: 3
+  mod:
+    name: "&5Mod"
+    prefix: "&5&lMOD &5"
+    perm: "tag.mod"
+    priority: 4
+  ajudante:
+    name: "&9AJudante"
+    prefix: "&9&lAJD &9"
+    perm: "tag.helper"
+    priority: 5
+  vip:
+    name: "&aVIP"
+    prefix: "&a&lVIP &a"
+    perm: "tag.vip"
+    priority: 6
+  normal:
+    name: "&7Normal"
+    prefix: "&7&l* &7"
+    perm: ""
+    priority: 7
