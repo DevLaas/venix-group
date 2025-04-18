@@ -13,7 +13,7 @@ O **Venix Group Plugin** é um plugin para Minecraft desenvolvido para facilitar
 - `/group <adicionar/remover> <player> <group>`: Adiciona ou remove um grupo de um jogador.
   - **Adicionar**: Concede o grupo ao jogador e pode ativar efeitos VIP.
   - **Remover**: Remove o grupo do jogador.
-- /tag <nome>: Aplica diretamente uma tag ao jogador, se ele tiver permissão para usá-la.
+- `/tag <nome>`: Aplica diretamente uma tag ao jogador, se ele tiver permissão para usá-la.
   - **Altere**: Altere sua tag com base nas permissões vinculadas em você atráves do LuckPerms.
 
 ### Exemplos de Uso
